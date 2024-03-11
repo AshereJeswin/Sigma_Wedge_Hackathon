@@ -45,11 +45,11 @@ A value function is then defined to make decisions about placing a buy order for
 To inform our buying decisions, we calculate the probability distribution for transitioning from the current state (`s(d)`) to other possible states. This involves a detailed analysis of historical data to identify patterns and trends that can predict future market behavior.
 
 ## Backtesting
-Test our Strategy: Quantrocket provides tools for backtesting your strategies against historical data. Use this feature to test your model's performance, specifically its ability to maximize the portfolio value through strategic buy orders
+Test our Strategy: Quantrocket provides tools for backtesting your strategies against historical data. I used this feature to test my model's performance, specifically its ability to maximize the portfolio value through strategic buy orders
 
-Before risking any real money, it's crucial to test your strategy against historical data to see how it would have performed in the past. This can be done using backtesting software or writing your own backtesting scripts in Python.
+Before risking any real money, it's crucial to test our strategy against historical data to see how it would have performed in the past. This can be done using backtesting software or backtesting scripts in Python.
 
-Minimalist Approach: Use Python libraries such as pandas for data manipulation and backtrader or QuantConnect for backtesting. These tools allow you to simulate trading decisions based on historical data and evaluate the performance of your strategy
+Minimalist Approach: Used Python libraries such as pandas for data manipulation and backtrader or QuantConnect for backtesting. These tools allow us to simulate trading decisions based on historical data and evaluate the performance of your strategy
 
 ## Predictive Analysis of Stock Closing Prices Using Polynomial Regression For Next `N` Days
 Primarily leveraging polynomial regression to forecast stock closing prices by analyzing the relationship between the day of the year and the stock's closing price. This sophisticated statistical approach enables the prediction of closing prices for a designated number of future trading days, specifically focusing on actual trading days and excluding weekends. 
