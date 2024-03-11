@@ -24,24 +24,24 @@ Bollinger Bands are a type of price envelope developed by John Bollinger in the 
 ## Strategy Development
 This section delves into the core aspects of our trading strategy, developed to maximize the portfolio value of Apple Inc. (AAPL) stock throughout 2023 using Quantrocket.
 
-### Daily Returns Calculation
+#### Daily Returns Calculation
 Our first step involves calculating daily returns for AAPL stock. This is done by comparing the closing price of the stock on any given day (`p(d)`) with its closing price on the previous day (`p(d-1)`), using the formula : r(d) = (p(d) - p(d-1)) / p(d-1)
 
-### State Classification
+#### State Classification
 Based on the calculated daily returns, we classify the market condition for each day into one of three distinct states:
 
 - **Bull State (+1):** For days when `r(d) >= 0.1`, indicating a significant positive return.
 - **Flat State (0):** For days when `-0.1 < r(d) < 0.1`, suggesting minimal market movement.
 - **Bear State (-1):** For days when `r(d) <= -0.1`, reflecting a significant negative return.
 
-### Value Function Definition
+#### Value Function Definition
 A value function is then defined to make decisions about placing a buy order for the following day (`d+1`), based on the state transitions observed. The portfolio value (`V(d+1)`) is updated according to the following rules:
 
 - If transitioning to a Bull State from a Flat State (`s(d+1) = 1 & s(d) = 0`), then `V(d+1) = V(d) + 1`.
 - If transitioning to a Bear State from a Flat State (`s(d+1) = -1 & s(d) = 0`), then `V(d+1) = V(d) - 1`.
 - In all other cases, `V(d+1) = V(d)`.
 
-### Transition Distribution Calculation
+#### Transition Distribution Calculation
 To inform our buying decisions, we calculate the probability distribution for transitioning from the current state (`s(d)`) to other possible states. This involves a detailed analysis of historical data to identify patterns and trends that can predict future market behavior.
 
 ## Backtesting
@@ -52,8 +52,6 @@ Before risking any real money, it's crucial to test your strategy against histor
 Minimalist Approach: Use Python libraries such as pandas for data manipulation and backtrader or QuantConnect for backtesting. These tools allow you to simulate trading decisions based on historical data and evaluate the performance of your strategy
 
 ## Predictive Analysis of Stock Closing Prices Using Polynomial Regression For Next `N` Days
-Here we perform a predictive analysis of stock closing prices using polynomial regression, a statistical technique that allows us to model the relationship between the day of the year and the stock's closing price. This analysis is particularly focused on forecasting the closing price for a specified number of future trading days, considering only the days the stock market is open.
-
 Primarily leveraging polynomial regression to forecast stock closing prices by analyzing the relationship between the day of the year and the stock's closing price. This sophisticated statistical approach enables the prediction of closing prices for a designated number of future trading days, specifically focusing on actual trading days and excluding weekends. 
 
 Beyond this predictive analysis, here I calculated the portfolio's projected value based on these forecasts, identified optimal buying opportunities (buying indices) within the forecasted period, and construct a transition probability matrix. This matrix offers insights into the likelihood of shifting between different market states, providing a comprehensive toolkit for informed trading strategies and portfolio optimization
