@@ -5,15 +5,6 @@ This repository contains my solution to the Sigma Internship Coding Challenge, w
 
 ## Getting Started
 
-### Prerequisites
-- Installation of Quantrocket on either a local machine or a cloud service.
-- Basic understanding of Quantrocket's functionalities.
-
-### Installation
-1. **Quantrocket Setup**: Follow the Quantrocket documentation to install and set up the platform.
-2. **Clone This Repository**: Get a local copy of this project for setup and review.
-
-
 ### Data Acquisition
 - Access and fetch daily closing price data for AAPL stock for the entire year of 2023 from Quantrocket's freely available US stock price data.
 
