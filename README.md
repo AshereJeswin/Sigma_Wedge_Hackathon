@@ -1,31 +1,9 @@
-# Sigma Internship Coding Challenge - Quantrocket Trading Strategy
+# Sigma Internship Coding Challenge
 
 ## Overview
-This repository contains my solution to the Sigma Internship Coding Challenge, which focuses on developing a trading strategy using the Quantrocket platform. The challenge involves algorithmic trading with the goal of maximizing portfolio value through strategic buy orders based on daily stock data for Apple Inc. (AAPL) for the year 2023.
+This repository presents my solution to the Sigma Wedge Hackathon Analysis, a coding challenge that leverages the Quantrocket platform to develop a minimalist trading model. The challenge is centered around algorithmic trading with the objective of maximizing portfolio value through strategic buy orders. Focusing specifically on Apple Inc. (AAPL) stock for the year 2023, the model employs a trading strategy that classifies market states, calculates a Transition Probabilities Matrix, and determines the optimal moments to execute buy orders based on daily stock price movements.
 
 ## Getting Started
 
-### Data Acquisition
-- Access and fetch daily closing price data for AAPL stock for the entire year of 2023 from Quantrocket's freely available US stock price data.
-
-## Trading Strategy
-
-### Objective
-Develop a simple model to decide on placing buy orders for the next day (d+1) to maximize the portfolio's value.
-
-### Methodology
-1. **Price and Returns**: Calculate the daily return \(r(d)\) as \(r(d) = \frac{p(d) - p(d-1)}{p(d-1)}\), where \(p(d)\) is the closing price on day \(d\).
-2. **State Classification**: Classify the market state for each day based on the returns:
-- Bull State (+1) if \(r(d) \geq 0.1\)
-- Flat State (0) if \(r(d) > -0.1\)
-- Bear State (-1) if \(r(d) \leq -0.1\)
-3. **Value Function**: Decide to place a buy order for day \(d+1\) based on the state transition, updating the portfolio value \(V(d+1)\) accordingly.
-4. **Transition Distribution**: Calculate the probability distribution of state transitions in a streaming manner, using historical observations.
-
-### Implementation
-- **Code**: Implement the logic in Python, including data fetching, state classification, value calculation, and decision making for buy orders.
-- **Execution**: Run the script to evaluate the trading strategy over the given data range and maximize the portfolio value \(V(N)\).
-
-## Results
-- Final portfolio value \(V(N)\)
-- Indices of days on which optimal buy orders were placed
+### Collection of Data
+Obtained the closing prices for each trading day within the specified period (January 1, 2023, to December 31, 2023). Closing prices are a critical piece of data for financial analysis and trading strategy development, as they represent the final price at which a stock is traded during a trading session
