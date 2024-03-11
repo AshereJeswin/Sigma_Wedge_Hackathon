@@ -43,3 +43,17 @@ A value function is then defined to make decisions about placing a buy order for
 
 ### Transition Distribution Calculation
 To inform our buying decisions, we calculate the probability distribution for transitioning from the current state (`s(d)`) to other possible states. This involves a detailed analysis of historical data to identify patterns and trends that can predict future market behavior.
+
+## Backtesting
+Test our Strategy: Quantrocket provides tools for backtesting your strategies against historical data. Use this feature to test your model's performance, specifically its ability to maximize the portfolio value through strategic buy orders
+
+Before risking any real money, it's crucial to test your strategy against historical data to see how it would have performed in the past. This can be done using backtesting software or writing your own backtesting scripts in Python.
+
+Minimalist Approach: Use Python libraries such as pandas for data manipulation and backtrader or QuantConnect for backtesting. These tools allow you to simulate trading decisions based on historical data and evaluate the performance of your strategy
+
+## Predictive Analysis of Stock Closing Prices Using Polynomial Regression For Next `N` Days
+Here we perform a predictive analysis of stock closing prices using polynomial regression, a statistical technique that allows us to model the relationship between the day of the year and the stock's closing price. This analysis is particularly focused on forecasting the closing price for a specified number of future trading days, considering only the days the stock market is open.
+
+Primarily leveraging polynomial regression to forecast stock closing prices by analyzing the relationship between the day of the year and the stock's closing price. This sophisticated statistical approach enables the prediction of closing prices for a designated number of future trading days, specifically focusing on actual trading days and excluding weekends. 
+
+Beyond this predictive analysis, here I calculated the portfolio's projected value based on these forecasts, identified optimal buying opportunities (buying indices) within the forecasted period, and construct a transition probability matrix. This matrix offers insights into the likelihood of shifting between different market states, providing a comprehensive toolkit for informed trading strategies and portfolio optimization
