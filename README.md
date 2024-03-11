@@ -54,4 +54,5 @@ Minimalist Approach: Use Python libraries such as pandas for data manipulation a
 ## Predictive Analysis of Stock Closing Prices Using Polynomial Regression For Next `N` Days
 Primarily leveraging polynomial regression to forecast stock closing prices by analyzing the relationship between the day of the year and the stock's closing price. This sophisticated statistical approach enables the prediction of closing prices for a designated number of future trading days, specifically focusing on actual trading days and excluding weekends. 
 
+#### Calculation Of Portfolio Value, Buy Indices And Transition Probability Matrix
 Beyond this predictive analysis, here I calculated the portfolio's projected value based on these forecasts, identified optimal buying opportunities (buying indices) within the forecasted period, and construct a transition probability matrix. This matrix offers insights into the likelihood of shifting between different market states, providing a comprehensive toolkit for informed trading strategies and portfolio optimization
