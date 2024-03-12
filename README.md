@@ -44,6 +44,17 @@ A value function is then defined to make decisions about placing a buy order for
 #### Transition Distribution Calculation
 To inform our buying decisions, we calculate the probability distribution for transitioning from the current state (`s(d)`) to other possible states. This involves a detailed analysis of historical data to identify patterns and trends that can predict future market behavior.
 
+# OUTPUT
+Final portfolio value: V(N) = 17
+
+Optimal buy indices: [5, 7, 11, 15, 20, 27, 29, 40, 49, 51, 58, 60, 68, 78, 84, 87, 93, 99, 102, 107, 109, 112, 116, 119, 122, 132, 141, 159, 163, 176, 186, 190, 206, 208, 211, 215, 217, 231, 233, 237]
+
+Transition Probabilities Matrix:
+From/To	Bear	Flat	Bull	
+Bear	0.14	0.74	0.11	
+Flat	0.15	0.60	0.25	
+Bull	0.12	0.68	0.20
+
 ## Backtesting
 Test our Strategy: Quantrocket provides tools for backtesting your strategies against historical data. I used this feature to test my model's performance, specifically its ability to maximize the portfolio value through strategic buy orders
 
