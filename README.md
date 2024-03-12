@@ -3,6 +3,18 @@
 ## Overview
 This repository presents my solution to the Sigma Wedge Hackathon. The challenge is centered around algorithmic trading with the objective of maximizing portfolio value through strategic buy orders. Focusing specifically on Apple Inc. (AAPL) stock for the year 2023, the model employs a trading strategy that classifies market states, calculates a Transition Probabilities Matrix, and determines the optimal moments to execute buy orders based on daily stock price movements.
 
+# OUTPUT
+#### Final portfolio value: V(N) = 17
+
+#### Optimal buy indices: [5, 7, 11, 15, 20, 27, 29, 40, 49, 51, 58, 60, 68, 78, 84, 87, 93, 99, 102, 107, 109, 112, 116, 119, 122, 132, 141, 159, 163, 176, 186, 190, 206, 208, 211, 215, 217, 231, 233, 237]
+
+#### Transition Probabilities Matrix:
+| From/To | Bear | Flat | Bull |
+|---------|------|------|------|
+| Bear    | 0.14 | 0.74 | 0.11 |
+| Flat    | 0.15 | 0.60 | 0.25 |
+| Bull    | 0.12 | 0.68 | 0.20 |
+
 ## Getting Started
 
 ### Collection of Data
@@ -96,3 +108,11 @@ Beyond this predictive analysis, here I calculated the portfolio's projected val
 | Bear    | 0.00 | 1.00 | 0.00 |
 | Flat    | 0.00 | 0.75 | 0.25 |
 | Bull    | 0.00 | 1.00 | 0.00 |
+
+## VISUALIZATIONS OUTPUT
+![Line Plot](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Line%20Plot.png)
+![Distributions of daily return](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/distribution%20of%20daily%20returns.JPG)
+![Moving Average and closing price](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Moving%20averages%20and%20closing%20price.png)
+![Bollinger Bands](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Bollinger%20Bands.png)
+![AAPL daily returns](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/AAPL%20Daily%20Returns%20State%20Classification.png)
+![Line Plot]([https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Line%20Plot.png](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/state%20transition%20probability%20heatmap.JPG))
