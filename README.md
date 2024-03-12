@@ -15,6 +15,15 @@ This repository presents my solution to the Sigma Wedge Hackathon. The challenge
 | Flat    | 0.15 | 0.60 | 0.25 |
 | Bull    | 0.12 | 0.68 | 0.20 |
 
+## VISUALIZATIONS OUTPUT
+![Line Plot](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Line%20Plot.png)
+![Distributions of daily return](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/distribution%20of%20daily%20returns.JPG)
+![Moving Average and closing price](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Moving%20averages%20and%20closing%20price.png)
+![Bollinger Bands](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Bollinger%20Bands.png)
+![AAPL daily returns](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/AAPL%20Daily%20Returns%20State%20Classification.png)
+![heatmap](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/state%20transition%20probability%20heatmap.JPG)
+![Backtesting](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Backtest%20of%20a%20Moving%20Average%20Crossover%20Strategy.JPG)
+
 ## Getting Started
 
 ### Collection of Data
@@ -109,10 +118,4 @@ Beyond this predictive analysis, here I calculated the portfolio's projected val
 | Flat    | 0.00 | 0.75 | 0.25 |
 | Bull    | 0.00 | 1.00 | 0.00 |
 
-## VISUALIZATIONS OUTPUT
-![Line Plot](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Line%20Plot.png)
-![Distributions of daily return](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/distribution%20of%20daily%20returns.JPG)
-![Moving Average and closing price](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Moving%20averages%20and%20closing%20price.png)
-![Bollinger Bands](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Bollinger%20Bands.png)
-![AAPL daily returns](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/AAPL%20Daily%20Returns%20State%20Classification.png)
-![Line Plot]([https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/Line%20Plot.png](https://github.com/AshereJeswin/Sigma_Wedge_Hackathon/blob/main/Visualizations/state%20transition%20probability%20heatmap.JPG))
+
