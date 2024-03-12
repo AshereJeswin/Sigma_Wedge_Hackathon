@@ -45,15 +45,16 @@ A value function is then defined to make decisions about placing a buy order for
 To inform our buying decisions, we calculate the probability distribution for transitioning from the current state (`s(d)`) to other possible states. This involves a detailed analysis of historical data to identify patterns and trends that can predict future market behavior.
 
 # OUTPUT
-# Final portfolio value: V(N) = 17
+#### Final portfolio value: V(N) = 17
 
-# Optimal buy indices: [5, 7, 11, 15, 20, 27, 29, 40, 49, 51, 58, 60, 68, 78, 84, 87, 93, 99, 102, 107, 109, 112, 116, 119, 122, 132, 141, 159, 163, 176, 186, 190, 206, 208, 211, 215, 217, 231, 233, 237]
+#### Optimal buy indices: [5, 7, 11, 15, 20, 27, 29, 40, 49, 51, 58, 60, 68, 78, 84, 87, 93, 99, 102, 107, 109, 112, 116, 119, 122, 132, 141, 159, 163, 176, 186, 190, 206, 208, 211, 215, 217, 231, 233, 237]
 
 #### Transition Probabilities Matrix:
-#### From/To	Bear	Flat	Bull	
-#### Bear	    0.14	0.74	0.11	
-#### Flat	    0.15	0.60	0.25	
-#### Bull	    0.12	0.68	0.20
+| From/To | Bear | Flat | Bull |
+|---------|------|------|------|
+| Bear    | 0.14 | 0.74 | 0.11 |
+| Flat    | 0.15 | 0.60 | 0.25 |
+| Bull    | 0.12 | 0.68 | 0.20 |
 
 ## Backtesting
 Test our Strategy: Quantrocket provides tools for backtesting your strategies against historical data. I used this feature to test my model's performance, specifically its ability to maximize the portfolio value through strategic buy orders
@@ -65,5 +66,33 @@ Minimalist Approach: Used Python libraries such as pandas for data manipulation 
 ## Predictive Analysis of Stock Closing Prices Using Polynomial Regression For Next `N` Days
 Primarily leveraging polynomial regression to forecast stock closing prices by analyzing the relationship between the day of the year and the stock's closing price. This sophisticated statistical approach enables the prediction of closing prices for a designated number of future trading days, specifically focusing on actual trading days and excluding weekends. 
 
+## Predicted Close Prices for Next 12 Trading Days
+
+|    Date    | Predicted Close Price |
+|------------|-----------------------|
+| 2024-01-01 |         122.267637    |
+| 2024-01-02 |         122.975623    |
+| 2024-01-03 |         123.677711    |
+| 2024-01-04 |         124.373927    |
+| 2024-01-05 |         125.064297    |
+| 2024-01-08 |         127.100582    |
+| 2024-01-09 |         127.767820    |
+| 2024-01-10 |         128.429338    |
+| 2024-01-11 |         129.085163    |
+| 2024-01-12 |         129.735320    |
+| 2024-01-15 |         131.652033    |
+| 2024-01-16 |         132.279770    |
+
 #### Calculation Of Portfolio Value, Buy Indices And Transition Probability Matrix
 Beyond this predictive analysis, here I calculated the portfolio's projected value based on these forecasts, identified optimal buying opportunities (buying indices) within the forecasted period, and construct a transition probability matrix. This matrix offers insights into the likelihood of shifting between different market states, providing a comprehensive toolkit for informed trading strategies and portfolio optimization
+
+# OUTPUT
+#### Final portfolio value: V(N) = 2
+
+#### Optimal buy indices: [5, 10]
+#### Transition Probabilities Matrix:
+| From/To | Bear | Flat | Bull |
+|---------|------|------|------|
+| Bear    | 0.00 | 1.00 | 0.00 |
+| Flat    | 0.00 | 0.75 | 0.25 |
+| Bull    | 0.00 | 1.00 | 0.00 |
